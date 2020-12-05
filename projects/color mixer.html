@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        #colorBlock{
+            width: 500px;
+            height: 200px;
+            background-color: rgb(0,0,0);
+        }
+
+        #indicator{
+            width: 500px;
+            height: 50px;
+            border-style: solid;
+            border-color: gray;
+        }
+
+        #button{
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 5px;
+            border-style: solid;
+            border-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBlock"></div>
+    <div id="indicator">Current Color: rgb(0,0,0)</div>
+
+    <div id="button">Red</div>
+    <div id="button" onclick="itsClicked(event)" data-red="1">+1</div>
+    <div id="button" onclick="itsClicked(event)" data-red="5">+5</div>
+    <div id="button" onclick="itsClicked(event)" data-red="10">+10</div>
+    <div style="clear:left"></div>
+
+    <div id="button">Green</div>
+    <div id="button" onclick="itsClicked(event)" data-green="1">+1</div>
+    <div id="button" onclick="itsClicked(event)" data-green="5">+5</div>
+    <div id="button" onclick="itsClicked(event)" data-green="10">+10</div>
+    <div style="clear:left"></div>
+
+    <div id="button">Blue</div>
+    <div id="button" onclick="itsClicked(event)" data-blue="1">+1</div>
+    <div id="button" onclick="itsClicked(event)" data-blue="5">+5</div>
+    <div id="button" onclick="itsClicked(event)" data-blue="10">+10</div>
+    <div style="clear:left"></div>
+
+    <script src="js/color mixer.js"></script>
+</body>
+</html>
